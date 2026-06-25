@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>10. nedēļa</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="navbar">
+        <div class="nav-logo-button">
+            <div class="logo"><a href="index.html"><img src="images/logo.png" alt="Mājaslapas logo"></a></div>
+            <button id="mode-change">Tumšais režīms</button>
+        </div>
+        <nav>
+            <ul class="nav-tabs">
+                <li><a href="nodala1.html">1. <span class="nav-nedela">nedēļa</span></a></li>
+                <li><a href="nodala2.html">5. <span class="nav-nedela">nedēļa</span></a></li>
+                <li><a href="nodala3.html">10. <span class="nav-nedela">nedēļa</span></a></li>
+                <li><a href="nodala4.html">15. <span class="nav-nedela">nedēļa</span></a></li>
+                <li><a href="nodala5.html">19. <span class="nav-nedela">nedēļa</span></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="section-page">
+        <div class="section-header">
+            <p>10. nedēļa: 2026. gada 6.-10. aprīlis</p>
+        </div>
+
+        <article class="blog-post">
+            <h1>Darbi, mājasdarbi, kontroldarbi</h1>
+            <div class="post-image">
+                <img
+                    src="images/nodala3_img.jpeg"
+                    alt="Bižu teorijas uzdevums">
+                <p><i>Mans mīļākais matemātikas pamatjēdziens</i></p>
+            </div>
+            <div class="post-content">
+                <p><i>2026. gada 6.-10. aprīlis</i></p>
+                <p>
+                    Šī nedēļa sākās ar Otrajām Lieldienām, bet beidzās ar divu mājasdarbu termiņiem vienā dienā, kā arī tika izziņoti vairāki kontroldarbi nākamajās nedēļās. Februāris un marts bija ļoti, pārāk mierīgi, bet tagad semestris sāk pieaugt intensitātē.
+                </p>
+                <p>
+                    Šie divi kursi, kuros uz šonedēļu ir uzdoti mājasdarbi, ir Matemātikas Pamatjēdzieni un Kvantu Skaitļošana.
+                </p>
+                <p>
+                    Matemātikas Pamatjēdzieni ir diezgan neierasts kurss, jo tajā ik pēc pāris lekcijām nomainās pasniedzēji, kuri katrs pasniedz savu tēmu. No kursa nosaukuma ir grūti saprast, par ko tieši tas ir, bet tajā apskatīto tēmu ir tik daudz un dažādu, turklāt tās lielākoties nav saistītas viena ar otru, ka “pamatjēdzieni” tiešām ir labākais veids, kā to aprakstīt.
+                </p>
+                <p>
+                    Kvantu Skaitļošana ir kurss, kas mani gan interesē, gan nedaudz biedē. Viela ir pasniegta saprotamā, matemātiskā veidā un es līdz šim esmu spējusi izsekot tai, bet es joprojām nevaru aptvert to, kā dzīvē var pastāvēt un strādāt kvantu datori. Atšķirībā no citiem kursiem, šī tēma man patiešām ir pilnīgi jauna.
+                </p>
+                <p>
+                    Tā kā šie abi ir ar matemātiku saistīti kursi, es katrā lekcijā esmu pierakstījusi cik daudz vien varu, un, vadoties pēc šiem pierakstiem, esmu izpildījusi mājasdarbus.
+                </p>
+            </div>
+        </article>
+    </main>
+    <script>
+        const button = document.getElementById('mode-change');
+        button.addEventListener('click', () => {
+            document.body.classList.toggle('dark-mode');
+            if(button.innerHTML == "Tumšais režīms") button.innerHTML = "Gaišais režīms";
+            else button.innerHTML = "Tumšais režīms";
+        });
+    </script>
+</body>
+</html>

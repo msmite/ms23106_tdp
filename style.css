@@ -1,0 +1,210 @@
+/* Reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    --bgimage: url('images/bg_lightmode.png');
+    --bgcolor: #F1E3C8;
+    --textcolor: #3B2A1D;
+    --bordercolor: #2C221E;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+    background-image: var(--bgimage);
+    background-size: cover;
+    color: var(--textcolor);
+    padding: 20px;
+}
+
+body.dark-mode { /* dark mode */
+    --bgimage: url('images/bg_darkmode3.png');
+    --bgcolor: #312f2d;
+    --textcolor: #f3e7d5;
+    --bordercolor: #b08d65;
+}
+
+/* Navigācija */
+.navbar {
+    max-width: 1200px;
+    margin: 0 auto 80px auto;
+    border: 1px solid var(--bordercolor);
+    border-radius: 8px;
+    background: var(--bgcolor);
+    padding: 24px 28px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    width: 50px;
+    height: 50px;
+}
+
+.nav-tabs {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+}
+
+.nav-logo-button {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.navbar a { /* x. nedēļa */
+    text-decoration: none;
+    color: var(--bordercolor);
+    font-weight: bold;
+}
+
+#mode-change {
+    font-family: inherit;
+    font-weight: bold;
+    color: var(--bordercolor);
+    background: var(--bgcolor);
+    border: 1px solid var(--bordercolor);
+    border-radius: 8px;
+    padding: 10px 16px;
+    cursor: pointer;
+    min-width: 140px;
+}
+
+/* Sākumlapa */
+.hero {
+    max-width: 1200px;
+    margin: 0 auto;
+    border: 1px solid var(--bordercolor);
+    border-radius: 8px;
+    background: var(--bgcolor);
+    padding: 30px;
+
+    display: flex;
+    gap: 50px;
+    align-items: center;
+}
+
+.hero-text {
+    flex: 1;
+    text-align: center;
+}
+
+.hero-text h1 {
+    font-size: 3.6rem;
+    font-weight: normal;
+    margin-bottom: 20px;
+}
+
+.hero-text p {
+    margin-bottom: 15px;
+    line-height: 1.5;
+    font-size: 1.1rem;
+}
+
+.hero-image {
+    flex: 1;
+}
+
+.hero-image img {
+    width: 100%;
+    display: block;
+}
+
+/* Nodaļa */
+.section-page {
+    max-width: 1200px;
+    margin: 0 auto;
+    background: var(--bgcolor);
+    border: 1px solid var(--bordercolor);
+    border-radius: 8px;
+}
+
+.section-header {
+    padding: 20px 30px;
+    border-bottom: 1px solid var(--bordercolor);
+    font-size: 1.2rem;
+    font-weight: normal;
+    text-align: right;
+    color: var(--bordercolor);
+}
+
+.blog-post {
+    max-width: 750px;
+    margin: 0 auto;
+    padding: 30px;
+}
+
+.blog-post h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.post-image {
+    margin-bottom: 25px;
+}
+
+.post-image img {
+    width: 100%;
+    display: block;
+}
+
+.blog-post p {
+    font-size: 1.1rem;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+
+    .navbar {
+        flex-direction: row;
+        gap: 20px;
+        text-align: center;
+    }
+
+    .nav-tabs {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 16px;
+    }
+
+    .nav-nedela {
+        display: none;
+    }
+
+    .hero {
+        flex-direction: column;
+    }
+
+    .hero-text h1 {
+        font-size: 2.4rem;
+    }
+
+    .hero-text p {
+        font-size: 1rem;
+    }
+
+    .section-header {
+        padding: 16px 20px;
+    }
+
+    .blog-post {
+        padding: 20px;
+    }
+
+    .blog-post h1 {
+        font-size: 1.5rem;
+    }
+
+    .post-content p {
+        font-size: 1rem;
+    }
+}
